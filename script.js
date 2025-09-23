@@ -1,4 +1,25 @@
-for(i = 1; i <= 151; i++) {
+let traductor = {
+    "normal": "normal",
+    "fire": "fuego",
+    "water": "agua",
+    "electric": "electrico",
+    "grass": "planta",
+    "ice": "hielo",
+    "fighting": "lucha",
+    "poison": "veneno",
+    "ground": "tierra",
+    "flying": "volador",
+    "psychic": "psiquico",
+    "bug": "bicho",
+    "rock": "roca",
+    "ghost": "fantasma",
+    "dragon": "dragon",
+    "dark": "siniestro",
+    "steel": "acero",
+    "fairy": "hada"
+};
+
+for(i = 2; i <= 151; i++) {
     fetch(`https://pokeapi.co/api/v2/pokemon/${i}`)
     .then(respuesta => respuesta.json())
     .then(datos => {
@@ -23,12 +44,12 @@ if (datos.id < 10) {
         let tiposHTML = '';
 if (datos.types.length === 2) {
     tiposHTML = `
-        <p>${datos.types[0].type.name}</p>
-        <p>${datos.types[1].type.name}</p>
+        <p class="${traductor[datos.types[0].type.name]}">${traductor[datos.types[0].type.name]}</p>
+        <p class="${traductor[datos.types[1].type.name]}">${traductor[datos.types[1].type.name]}</p>
     `;
 } else {
     tiposHTML = `
-        <p>${datos.types[0].type.name}</p>
+        <p class="${traductor[datos.types[0].type.name]}">${traductor[datos.types[0].type.name]}</p>
     `;
 }
     let contenedor = document.getElementById("pokemon-todos");
@@ -37,14 +58,14 @@ if (datos.types.length === 2) {
         <div class="num">
             <p>#${num}</p>
         </div>
-        <div class="nombre">
-            <p>${datos.name}<p>
-        </div>
         <div class="img">
             <img src="${datos.sprites.front_default}">
         </div>
+        <div class="nombre">
+            <p>${datos.name}</p>
+        </div>
         <div class="tipos">
-            <p>${tiposHTML}</p>
+            ${tiposHTML}
         </div>
     </div>
     `;

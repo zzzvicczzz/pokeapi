@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
 main{
-    margin: 45px 345px;
+    margin: 45px auto;
+    max-width: 1200px;
+    padding: 0 20px;
 }
 
 #logo {
@@ -17,8 +19,9 @@ body header {
     text-align: center;
     margin: auto;
     height: 100px;
-    width: 500px;
-    padding: 100px;
+    max-width: 500px;
+    width: 100%;
+    padding: 100px 20px;
 }
 
 #types-list {
@@ -115,6 +118,11 @@ body header {
     color: black;
 }
 
+.todos {
+    background-color: #888888;
+    color: white;
+}
+
 ul {
     list-style: none;
     padding-left: 0;
@@ -128,8 +136,9 @@ body {
 
 #pokemon-todos {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
+    justify-items: center;
 }
 
 .tarjetas {
