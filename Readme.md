@@ -2,6 +2,10 @@
 
 Un proyecto personal para aprender desarrollo web conectando con APIs externas.
 
+## 🌐 Ver Proyecto en Funcionamiento
+
+**👀 [Ver Pokédex en Vivo](https://brainy-cover.surge.sh)** - Desplegado con Surge.sh
+
 ## 📋 Descripción
 
 Pokédex interactiva que muestra información de los primeros 151 Pokémon utilizando la PokeAPI. Cada Pokémon se presenta en tarjetas elegantes con su imagen, nombre, número de la Pokédex y tipos.
