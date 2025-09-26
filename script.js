@@ -1,3 +1,4 @@
+//pruebas antes del codereview
 let traductor = {
     "normal": "normal",
     "fire": "fuego",
