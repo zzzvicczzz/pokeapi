@@ -2,6 +2,7 @@
 
 main{
     margin: 45px auto;
+    margin-top: 120px;
     max-width: 1200px;
     padding: 0 20px;
 }
@@ -105,10 +106,6 @@ body header {
     background-color: #7038f8;
     color: rgb(0, 0, 0);
 }
-.siniestro {
-    background-color: #705848;
-    color: rgb(0, 0, 0);
-}
 .acero {
     background-color: #b8b8d0;
     color: black;
@@ -121,6 +118,14 @@ body header {
 .todos {
     background-color: #888888;
     color: white;
+}
+
+.btn-todos-container {
+    grid-column: 1 / -1;
+}
+
+.btn-todos-container .btn {
+    width: 100%;
 }
 
 ul {
@@ -148,7 +153,7 @@ body {
     height: 260px;
     padding: 10px;
     background-color: white;
-    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 15px 18px rgba(0, 0, 0, 0.2);
     position: relative;
     cursor: pointer;
 }

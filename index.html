@@ -8,7 +8,9 @@
 </head>
 <body>
     <header>
-        <img src="/imagenes/pokeapi_256.png" alt="Pokédex Logo" id="logo">
+        <a href="https://pokeapi.co/" target="_blank">
+            <img src="/imagenes/pokeapi_256.png" alt="Pokédex Logo" id="logo">
+        </a>
         <ul id="types-list">
             <li class="nav"><button class="btn normal" id="normal">Normal</button></li>
             <li class="nav"><button class="btn fuego" id="fuego">Fuego</button></li>
@@ -25,13 +27,12 @@
             <li class="nav"><button class="btn roca" id="roca">Roca</button></li>
             <li class="nav"><button class="btn fantasma" id="fantasma">Fantasma</button></li>
             <li class="nav"><button class="btn dragon" id="dragon">Dragón</button></li>
-            <li class="nav"><button class="btn siniestro" id="siniestro">Siniestro</button></li>
             <li class="nav"><button class="btn acero" id="acero">Acero</button></li>
             <li class="nav"><button class="btn hada" id="hada">Hada</button></li>
+            <li class="nav btn-todos-container"><button class="btn todos" id="todos">Ver Todos</button></li>
         </ul>
     </header>
     <main>
-        
         <div id="pokemon-todos">
             <div class="tarjetas">
                 <div class="num">
@@ -49,8 +50,10 @@
                 </div>
             </div>
         </div>
-        
     </main>
+    <script src="models/models.js"></script>
+    <script src="controller/controller.js"></script>
+    <script src="views/views.js"></script>
+    <script src="main.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
