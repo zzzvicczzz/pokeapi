@@ -1,24 +1,5 @@
 class controllerPokemon {
-    constructor() {
-        this.traductor = {
-    "normal": "normal",
-    "fire": "fuego",
-    "water": "agua",
-    "electric": "electrico",
-    "grass": "planta",
-    "ice": "hielo",
-    "fighting": "lucha",
-    "poison": "veneno",
-    "ground": "tierra",
-    "flying": "volador",
-    "psychic": "psiquico",
-    "bug": "bicho",
-    "rock": "roca",
-    "ghost": "fantasma",
-    "dragon": "dragon",
-    "steel": "acero",
-    "fairy": "hada"
-    };
+    
     this.botonFiltrar();
 }
     botonFiltrar() {
