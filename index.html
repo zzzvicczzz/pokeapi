@@ -34,26 +34,12 @@
     </header>
     <main>
         <div id="pokemon-todos">
-            <div class="tarjetas">
-                <div class="num">
-                    <p>#001</p>
-                </div>
-                <div class="img">
-                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur">
-                </div>
-                <div class="nombre">
-                    <p>Bulbasaur</p>
-                </div>
-                <div class="tipos">
-                    <p class="planta">Planta</p>
-                    <p class="veneno">Veneno</p>
-                </div>
-            </div>
         </div>
     </main>
-    <script src="models/models.js"></script>
-    <script src="controller/controller.js"></script>
-    <script src="views/views.js"></script>
+    <script src="domain/entities/pokemon.js"></script>
+    <script src="data/repositories/pokemonRepositories.js"></script>
+    <script src="presentation/views/pokemonView.js"></script>
+    <script src="presentation/presenters/pokemonPresenter.js"></script>
     <script src="main.js"></script>
 </body>
 </html>

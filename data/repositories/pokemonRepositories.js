@@ -21,14 +21,20 @@ class pokemonRepository {
 }
 }
     async getPokemonById(id) {
-        const apiData = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
-        const pokemonData = await apiData.json();
-        const traduccion = pokemonData.types.map(tipo => this.traductor[tipo.type.name]);
+        try{
+            const apiData = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
+            const pokemonData = await apiData.json();
+            const traduccion = pokemonData.types.map(tipo => this.traductor[tipo.type.name]);
         return new Pokemon(
             pokemonData.id,
             pokemonData.name,
             pokemonData.sprites.front_default,
             traduccion
         );
+        } catch (error) {
+            return null;
+        }
+        
+        
     }
 }

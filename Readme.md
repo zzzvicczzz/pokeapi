@@ -36,5 +36,19 @@ Pokédex interactiva que muestra información de los primeros 151 Pokémon utili
 
 **En desarrollo** - Proyecto de aprendizaje de un desarrollador principiante.
 
+## 🆕 Cambios en la rama feature/MVP
+
+Esta rama implementa la arquitectura MVP (Model-View-Presenter) para el proyecto Pokédex. Las diferencias principales respecto a la versión anterior son:
+
+- Separación clara en capas: dominio (entidades), datos (repositorios), presentación (vistas y presentadores).
+- Código más mantenible y escalable.
+- Lógica de negocio y manipulación del DOM desacopladas.
+- Filtros de tipos funcionales en la interfaz.
+- Manejo de errores visual para Pokémon no encontrados.
+- Uso de async/await en toda la lógica asíncrona.
+- Eliminación de código hardcodeado y archivos obsoletos.
+
+> Esta rama está pensada para aprendizaje y buenas prácticas de arquitectura frontend.
+
 ---
 *Desarrollado como parte del aprendizaje de desarrollo web frontend*
