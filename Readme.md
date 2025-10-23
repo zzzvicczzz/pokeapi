@@ -34,7 +34,13 @@ Pokédex interactiva que muestra información de los primeros 151 Pokémon utili
 
 ## 👨‍💻 Estado del Proyecto
 
-**En desarrollo** - Proyecto de aprendizaje de un desarrollador principiante.
+**Finalizado** - Este fue el primer intento del proyecto, por lo que no incorpora los botones funcionales ni los filtros avanzados presentes en otras ramas. Sirve como base para comparar la evolución y mejoras en la arquitectura y funcionalidad.
+
+## 🆕 Particularidad de la rama development
+
+Esta rama representa la versión inicial de la Pokédex interactiva. Aquí se implementó la estructura básica y la lógica principal, pero aún no se incorporan los botones funcionales ni los filtros de tipos. Es útil para ver el progreso y comparar con ramas posteriores como feature/MVC y feature/MVP, donde se mejoran la arquitectura y la experiencia de usuario.
+
+> Esta rama está pensada para mostrar el primer intento y servir de referencia para el aprendizaje y evolución del proyecto.
 
 ---
 *Desarrollado como parte del aprendizaje de desarrollo web frontend*
