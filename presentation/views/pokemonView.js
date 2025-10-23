@@ -69,16 +69,16 @@ class PokemonView {
     }
 
     filtroPorTipo(type) {
-        const cards = this.contenedor.querySelectorAll('.tarjetas');
-        cards.forEach(card => {
-            const hasType = card.querySelector(`.tipos .${type}`);
-            card.style.display = hasType ? 'block' : 'none';
+        const tarj = this.contenedor.querySelectorAll('.tarjetas');
+        tarj.forEach(tar => {
+            const hasType = tar.querySelector(`.tipos .${type}`);
+            tar.style.display = hasType ? 'block' : 'none';
         });
     }
 
     mostrarTodo() {
-        const cards = this.contenedor.querySelectorAll('.tarjetas');
-        cards.forEach(card => card.style.display = 'block');
+        const tarj = this.contenedor.querySelectorAll('.tarjetas');
+        tarj.forEach(tar => tar.style.display = 'block');
     }
     
 }
