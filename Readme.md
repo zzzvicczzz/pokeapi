@@ -34,7 +34,7 @@ Pokédex interactiva que muestra información de los primeros 151 Pokémon utili
 
 ## 👨‍💻 Estado del Proyecto
 
-**En desarrollo** - Proyecto de aprendizaje de un desarrollador principiante.
+**Finalizado** - Proyecto de aprendizaje de un desarrollador principiante.
 
 ## 🆕 Cambios en la rama feature/MVP
 
