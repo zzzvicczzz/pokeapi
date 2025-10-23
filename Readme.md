@@ -36,5 +36,17 @@ Pokédex interactiva que muestra información de los primeros 151 Pokémon utili
 
 **En desarrollo** - Proyecto de aprendizaje de un desarrollador principiante.
 
+## 🆕 Cambios en la rama feature/MVC
+
+Esta rama implementa la arquitectura MVC (Model-View-Controller) para el proyecto Pokédex. Las diferencias principales respecto a otras ramas son:
+
+- Separación en capas: modelo, vista y controlador.
+- El controlador gestiona la lógica y la comunicación entre modelo y vista.
+- Código estructurado para facilitar el aprendizaje de MVC clásico.
+- No utiliza presentadores ni desacopla tanto la lógica del DOM como en la rama MVP.
+- Ideal para comparar con la rama MVP y entender ventajas/desventajas de cada arquitectura.
+
+> Esta rama está pensada para aprendizaje y comparación de patrones de arquitectura frontend.
+
 ---
 *Desarrollado como parte del aprendizaje de desarrollo web frontend*
